@@ -1,0 +1,14 @@
+ruby: using gem GCal4Ruby now, will likely move to another gem soon
+
+Progress:
+Proof of concept, parsing my calendars into the embed url format
+
+Todo:
+# put default cal in iframe with list of other available calendars for mixing in, up to 10 max, I think
+# better config, and oauth. omniauth?
+# allow editing of calendars, or creating a new calendar
+# allow sharing
+# allow inviting
+# make it look good
+# use any icalendar
+# import from csv or ics
