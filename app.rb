@@ -16,8 +16,10 @@ color = "color=%23853104&amp;"
 timezone = "ctz=America%2FChicago"
 
 File.open("mycalendars.html","w") do |c|
+  c.write("<html><head><title>My Calendars</title></head><body>")
   calendars.each do |i|
-    c.write("#{i.title}:  #{url.gsub(/FEEDID/,i.id)}")
+    c.write("\n#{i.title}:  #{src.gsub(/FEEDID/,i.id)}<br /><br />\n")
   end
+  c.write("</body></html>")
 end
 
